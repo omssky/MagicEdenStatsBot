@@ -1,6 +1,6 @@
 # MagicEdenStatsBot
 
-This repository contains the source code for a small telegram bot designed to make it easier to check the basic collection parameters on the Solana NFT marketplace MagicEden.
+This repository contains the source code for a small telegram bot designed to make it easier to check the basic collection parameters on the Solana NFT marketplace MagicEden.;
 You can use it here: https://t.me/MagicEdenStatsBot (Not yet launched)
 
 ### Features
