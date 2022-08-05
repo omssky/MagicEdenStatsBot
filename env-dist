@@ -1,0 +1,13 @@
+# Note: rename this file to .env (with leading dot)
+
+# This is your bot's token. Go to https://t.me/botfather to claim it!
+TOKEN=<bot_token>
+
+# User ID of bot's admin, this user will have some extended functions.
+ADMIN_ID=<user_id>
+
+# Version variable
+VERSION=1.0.0
+
+# File id of GIF in start message
+START_GIF=<file_id>
