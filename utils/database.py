@@ -1,6 +1,7 @@
-from array import array
 import logging
 import aiosqlite
+from typing import Any, List
+
 
 class DataBase:
     def __init__(self, db_path="database.db"):
@@ -30,7 +31,7 @@ class DataBase:
             await connection.commit()
             logging.info(f"[ID:{user_id}]: deleted from DB")
     
-    async def get_users(self) -> array:
+    async def get_users(self) -> List[int]:
         async with aiosqlite.connect(self.db_path) as connection:
             async with connection.execute("SELECT user_id FROM users") as cursor:
                 users = await cursor.fetchall()
@@ -63,7 +64,7 @@ class DataBase:
             await connection.execute("DELETE FROM favorites WHERE key_user = (SELECT _id FROM users WHERE user_id = ?) AND col_symbol = ?", (user_id, collection_symbol))
             await connection.commit()
 
-    async def get_user_favorites(self, user_id) -> array:
+    async def get_user_favorites(self, user_id) -> List[Any]:
             async with aiosqlite.connect(self.db_path) as connection:
                 async with connection.execute("SELECT col_symbol, col_name FROM favorites JOIN users ON favorites.key_user = users._id WHERE user_id = ?", (user_id,)) as cursor:
                     return await cursor.fetchall()

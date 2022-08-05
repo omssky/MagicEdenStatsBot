@@ -17,7 +17,7 @@ async def cmd_start(message: Message):
         await db.add_user(message.from_user.id)
 
     start_text = ("This bot is designed to make tracking <b>Solana NFTs</b> easier.\n"
-            "Collections are searched by the collection's <b>symbol</b>*, which can be very <b>different from its name</b>. "
+            "Collections are searched by the collection's <b>symbol</b>*, which can be very <b>different from its name</b>."
             "So to find the collection <b>exactly</b>, enter its symbol* or use the link search!\n"
             "*can be found in the link: magiceden.io/marketplace/<u><b>SYMBOL</b></u>\n\n"
             f"Current version: {__version__} \n\n"
