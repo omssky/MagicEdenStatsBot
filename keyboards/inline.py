@@ -54,3 +54,4 @@ async def get_notify_kb() -> InlineKeyboardMarkup:
     ]
     keyboard = InlineKeyboardMarkup(inline_keyboard=buttons)
     return keyboard
+    

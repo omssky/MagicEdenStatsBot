@@ -25,3 +25,4 @@ async def adm_stats(message: Message):
 async def adm_notify(message: Message):
     msg = message.html_text
     await message.reply(text=msg.replace("/notify", ''), reply_markup=await inline.get_notify_kb())
+    

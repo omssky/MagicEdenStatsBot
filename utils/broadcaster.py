@@ -23,3 +23,4 @@ async def send_message(user_id: int, text: str) -> bool:
     else:
         return True
     return False
+    

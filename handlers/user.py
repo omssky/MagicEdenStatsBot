@@ -6,7 +6,7 @@ from aiogram.dispatcher.filters.command import CommandObject
 from loader import db
 from utils import me_request
 from keyboards import inline
-from config import __version__
+from config import __version__, START_GIF
 
 router = Router()
 
@@ -22,7 +22,7 @@ async def cmd_start(message: Message):
             "*can be found in the link: magiceden.io/marketplace/<u><b>SYMBOL</b></u>\n\n"
             f"Current version: {__version__} \n\n"
             "💸 Donate to the author (SOL): <code>Bqjece7hWRKnb14pEd6oUDm4NRPKe1sLSLjDbGXeX2aU</code>")
-    await message.answer_video(video='https://t.me/omsskytxt/52', caption=start_text, parse_mode='HTML')
+    await message.answer_video(video=START_GIF, caption=start_text, parse_mode='HTML')
 
 # This handler will be called when user sends `/help` command
 @router.message(Command(commands=["help"]))

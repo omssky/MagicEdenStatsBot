@@ -11,3 +11,4 @@ def setup_routers() -> Router:
     router.include_router(other.router)
     
     return router
+    

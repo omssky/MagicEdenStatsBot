@@ -23,3 +23,4 @@ async def collecion_info(user_query):
         else:
             logging.error(f"Search [{user_query}:{collection_symbol}] FAILED")
             return None
+            
