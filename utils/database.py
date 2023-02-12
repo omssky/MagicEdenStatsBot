@@ -74,4 +74,9 @@ class DataBase:
                 async with connection.execute("SELECT COUNT(_id) FROM favorites") as cursor:
                     count = await cursor.fetchone()
                     return count[0]
+
+    async def custom_query(self, query) -> List[Any]:
+        async with aiosqlite.connect(self.db_path) as connection:
+                async with connection.execute(query) as cursor:
+                    return await cursor.fetchall()
     

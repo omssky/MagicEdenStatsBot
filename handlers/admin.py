@@ -2,6 +2,7 @@ from aiogram import Router, F
 from aiogram.types import Message
 import aiogram.utils.markdown as fmt
 from aiogram.dispatcher.filters.command import Command
+from aiogram.dispatcher.filters.command import CommandObject
 
 from loader import bot, db
 from keyboards import inline
@@ -25,4 +26,9 @@ async def adm_stats(message: Message):
 async def adm_notify(message: Message):
     msg = message.html_text
     await message.reply(text=msg.replace("/notify", ''), reply_markup=await inline.get_notify_kb())
+
+# Called when ADMIN sends `/query` command
+@router.message_handler(Command(commands=["query"]))
+async def adm_notify(message: Message, command: CommandObject):
+    await message.answer(str(await db.custom_query(command.args)))
     

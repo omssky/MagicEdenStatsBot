@@ -21,7 +21,7 @@ async def cmd_start(message: Message):
             "So to find the collection <b>exactly</b>, enter its symbol* or use the link search!\n"
             "*can be found in the link: magiceden.io/marketplace/<u><b>SYMBOL</b></u>\n\n"
             f"Current version: {__version__} \n\n"
-            "💸 Donate to the author (SOL): <code>Bqjece7hWRKnb14pEd6oUDm4NRPKe1sLSLjDbGXeX2aU</code>")
+            "💸 Donate to the author (SOL): <code>7Ledvy5TiVLbDbdNVAJWCRydmLVtWkAZvGPGQmpsQJnr</code>")
     await message.answer_video(video=START_GIF, caption=start_text, parse_mode='HTML')
 
 # This handler will be called when user sends `/help` command
