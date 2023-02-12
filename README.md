@@ -3,7 +3,7 @@
 ![](https://github.com/omssky/MagicEdenStatsBot/blob/main/data/demo.gif)
 
 This repository contains the source code for a small telegram bot designed to make it easier to check the basic collection parameters on the Solana NFT marketplace MagicEden.
-You can use it here: https://t.me/MagicEdenStatsBot (Not yet launched)
+You can use it here: https://t.me/MagicEdenStatsBot (Launched!)
 
 ### Features
 * `/fp *collecion_name*` - command to gather collection info by name or symbol;  
