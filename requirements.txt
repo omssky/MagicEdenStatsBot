@@ -1,3 +1,4 @@
 aiogram==3.0.0b3
 aiohttp==3.8.1
 aiosqlite==0.17.0
+environs==9.5.0
