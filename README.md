@@ -1,3 +1,5 @@
+> Old api was deprecated, so now i fix it by using other routre with less data, for more info see [commit](https://github.com/omssky/MagicEdenStatsBot/commit/96c95bf670749da914dd24a1dd5b1bf1f40dad32)
+
 # MagicEdenStatsBot
 
 ![](https://github.com/omssky/MagicEdenStatsBot/blob/main/data/demo.gif)
